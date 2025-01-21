@@ -1,0 +1,94 @@
+/* Reset some default browser styles */
+body, h1, h2, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style for the entire body */
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72, #2a5298); /* New, elegant gradient */
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    transition: background 0.5s ease; /* Smooth background transition */
+}
+
+/* Style for the main heading (h1) */
+h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px; /* Improved typography */
+    animation: fadeIn 1s ease; /* Subtle animation */
+}
+
+/* Style for the secondary heading (h2) */
+h2 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+    color: #d1e8ff; /* Softer secondary color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 1.5s ease;
+}
+
+/* Style for the button */
+button {
+    padding: 0.85rem 1.7rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #00b4d8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0077b6;
+    transform: scale(1.1); /* Larger hover effect */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Button active effect */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Smooth fade-in animation for elements */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media query for responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    button {
+        padding: 0.7rem 1.3rem;
+        font-size: 1rem;
+    }
+}
